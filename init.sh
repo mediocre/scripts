@@ -9,6 +9,12 @@
 echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
 eval $(/opt/homebrew/bin/brew shellenv)
 
+# AWS CLI
+brew install awscli
+
+# Docker Desktop
+brew install --cask docker
+
 # MongoDB
 brew tap mongodb/brew
 brew install mongodb-community@4.0
