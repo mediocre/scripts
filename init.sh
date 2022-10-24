@@ -53,10 +53,6 @@ open /Applications/MongoDB\ Compass.app
 # ngrok
 brew install ngrok
 
-# Tunnelblick
-brew install tunnelblick
-open /Applications/Tunnelblick.app
-
 # Visual Studio Code
 brew install visual-studio-code
 open /Applications/Visual\ Studio\ Code.app
