@@ -60,6 +60,9 @@ open /Applications/Visual\ Studio\ Code.app
 # Mac App Store CLI
 brew install mas
 
+# Azure VPN Client
+mas install 1553936137
+
 # Slack
 mas install 803453959
 open /Applications/Slack.app
