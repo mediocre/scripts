@@ -18,7 +18,7 @@ brew install --cask docker
 # MongoDB
 brew tap mongodb/brew
 brew install mongodb-community@4.2
-echo 'export PATH="/opt/homebrew/opt/mongodb-community@4.0/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/opt/homebrew/opt/mongodb-community@4.2/bin:$PATH"' >> ~/.zshrc
 brew services start mongodb/brew/mongodb-community@4.2
 
 # Redis
