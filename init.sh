@@ -1,7 +1,7 @@
 # This is for Mac computers with Apple silicon: https://support.apple.com/en-us/HT211814
 
 # Rosetta 2
-/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+#/usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -25,10 +25,10 @@ brew install redis
 brew services start redis
 
 # NVM
-touch ~/.zshrc
+#touch ~/.zshrc
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+#export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 nvm install 18
 
 # npmclean
