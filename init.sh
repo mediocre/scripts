@@ -30,7 +30,7 @@ touch ~/.zshrc
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-nvm install 16
+nvm install 18
 
 # npmclean
 echo 'alias npm-clean="rm -rf node_modules/ && rm -f package-lock.json && npm i && npm outdated"' >> ~/.zshrc
@@ -56,6 +56,9 @@ brew install ngrok
 # Visual Studio Code
 brew install visual-studio-code
 open /Applications/Visual\ Studio\ Code.app
+
+# Visual Studio Code - elint extension
+code --install-extension dbaeumer.vscode-eslint
 
 # Mac App Store CLI
 brew install mas
