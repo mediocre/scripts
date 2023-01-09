@@ -56,8 +56,9 @@ brew install ngrok
 brew install visual-studio-code
 open /Applications/Visual\ Studio\ Code.app
 
-# Visual Studio Code - elint extension
+# Visual Studio Code Extensions
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension ms-vsliveshare.vsliveshare
 
 # Mac App Store CLI
 brew install mas
