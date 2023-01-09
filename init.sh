@@ -1,5 +1,8 @@
 # This is for Mac computers with Apple silicon: https://support.apple.com/en-us/HT211814
 
+# Rosetta 2
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
