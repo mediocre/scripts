@@ -35,6 +35,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install 18
 
+# Downgrade to NPM 6
+npm install -g npm@6
+
 # npmclean
 echo 'alias npm-clean="rm -rf node_modules/ && rm -f package-lock.json && npm i && npm outdated"' >> ~/.zshrc
 alias npm-clean="rm -rf node_modules/ && rm -f package-lock.json && npm i && npm outdated"
