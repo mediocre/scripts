@@ -1,5 +1,8 @@
 # This is for Mac computers with Apple silicon: https://support.apple.com/en-us/HT211814
 
+# Remove all apps from macOS dock
+defaults write com.apple.dock persistent-apps -array
+
 # Rosetta 2
 #/usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
