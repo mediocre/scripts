@@ -3,9 +3,6 @@
 # Remove all apps from macOS dock
 defaults write com.apple.dock persistent-apps -array
 
-# Rosetta 2
-#/usr/sbin/softwareupdate --install-rosetta --agree-to-license
-
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
@@ -28,7 +25,6 @@ brew install redis
 brew services start redis
 
 # NVM
-#touch ~/.zshrc
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -50,18 +46,15 @@ npm i pm2 -g
 
 # GitHub Desktop
 brew install github
-open /Applications/GitHub\ Desktop.app
 
 # MongoDB Compass
 brew install mongodb-compass
-open /Applications/MongoDB\ Compass.app
 
 # ngrok
 brew install ngrok
 
 # Visual Studio Code
 brew install visual-studio-code
-open /Applications/Visual\ Studio\ Code.app
 
 # Visual Studio Code Extensions
 code --install-extension dbaeumer.vscode-eslint
@@ -75,7 +68,6 @@ mas install 1553936137
 
 # Slack
 mas install 803453959
-open /Applications/Slack.app
 
 # GitHub CLI
 brew install gh
