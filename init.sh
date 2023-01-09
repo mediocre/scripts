@@ -1,5 +1,4 @@
 # This is for Mac computers with Apple silicon: https://support.apple.com/en-us/HT211814
-# For Mac computers with Intel processors see https://gist.github.com/freshlogic/3cc0c776f0dee635edc5781a62065b43
 
 # Rosetta 2
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
