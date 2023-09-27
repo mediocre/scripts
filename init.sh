@@ -12,13 +12,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install awscli
 
 # Docker Desktop
-brew install --cask docker
+# brew install --cask docker
 
 # MongoDB
 brew tap mongodb/brew
-brew install mongodb-community@4.2
-echo 'export PATH="/opt/homebrew/opt/mongodb-community@4.2/bin:$PATH"' >> ~/.zshrc
-brew services start mongodb/brew/mongodb-community@4.2
+brew install mongodb-community@4.4
+echo 'export PATH="/opt/homebrew/opt/mongodb-community@4.4/bin:$PATH"' >> ~/.zshrc
+brew services start mongodb/brew/mongodb-community@4.4
 
 # Redis
 brew install redis
@@ -58,6 +58,7 @@ brew install visual-studio-code
 
 # Visual Studio Code Extensions
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension DigitalBrainstem.javascript-ejs-support
 code --install-extension ms-vsliveshare.vsliveshare
 
 # Mac App Store CLI
