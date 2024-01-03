@@ -56,6 +56,7 @@ brew install visual-studio-code
 # Visual Studio Code Extensions
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension DigitalBrainstem.javascript-ejs-support
+code --install-extension GitHub.copilot
 code --install-extension ms-vsliveshare.vsliveshare
 
 # Mac App Store CLI
