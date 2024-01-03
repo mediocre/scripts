@@ -1,7 +1,7 @@
 # This is for Mac computers with Apple silicon: https://support.apple.com/en-us/HT211814
 
 # Rosetta 2
-/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+#/usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -10,9 +10,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # AWS CLI
 brew install awscli
-
-# Docker Desktop
-# brew install --cask docker
 
 # MongoDB
 brew tap mongodb/brew
