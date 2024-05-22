@@ -13,9 +13,8 @@ brew install awscli
 
 # MongoDB
 brew tap mongodb/brew
-brew install mongodb-community@4.4
-echo 'export PATH="/opt/homebrew/opt/mongodb-community@4.4/bin:$PATH"' >> ~/.zshrc
-brew services start mongodb/brew/mongodb-community@4.4
+brew install mongodb-community@7.0
+brew services start mongodb-community@7.0
 
 # Redis
 brew install redis
