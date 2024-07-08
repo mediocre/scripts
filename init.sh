@@ -35,6 +35,7 @@ alias npm-clean="rm -rf node_modules/ && rm -f package-lock.json && npm i && npm
 
 # ESLint
 npm i eslint -g
+npm i @eslint/js -g
 
 # PM2
 npm i pm2 -g
