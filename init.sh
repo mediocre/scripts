@@ -1,7 +1,7 @@
 # This is for Mac computers with Apple silicon: https://support.apple.com/en-us/HT211814
 
 # Rosetta 2
-/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+#/usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -9,7 +9,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # AWS CLI
-brew install awscli
+#brew install awscli
 
 # MongoDB
 brew tap mongodb/brew
@@ -21,10 +21,11 @@ brew install redis
 brew services start redis
 
 # NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-nvm install 18
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+nvm install 20
 
 # Downgrade to NPM 6
 npm install -g npm@6
@@ -53,10 +54,10 @@ brew install ngrok
 brew install visual-studio-code
 
 # Visual Studio Code Extensions
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension DigitalBrainstem.javascript-ejs-support
-code --install-extension GitHub.copilot
-code --install-extension ms-vsliveshare.vsliveshare
+#code --install-extension dbaeumer.vscode-eslint
+#code --install-extension DigitalBrainstem.javascript-ejs-support
+#code --install-extension GitHub.copilot
+#code --install-extension ms-vsliveshare.vsliveshare
 
 # Mac App Store CLI
 brew install mas
