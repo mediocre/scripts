@@ -6,7 +6,7 @@ sudo apt -qq upgrade -y
 sudo apt -qq autoremove -y > /dev/null
 sudo apt install -y x11-xserver-utils unclutter
 
-AUTOSTART_PATH=$HOME/.config/lxsession/LXDE-pi
+AUTOSTART_PATH=$HOME/.config/labwc
 mkdir -p $AUTOSTART_PATH
 
 cat > $AUTOSTART_PATH/kiosk.sh <<EOF
@@ -41,14 +41,12 @@ EOF
 chmod +x $AUTOSTART_PATH/kiosk.sh
 
 if [[ ! -f $AUTOSTART_PATH/autostart ]]; then
-  # We are clear to clone the current autostart
-  cp /etc/xdg/lxsession/LXDE-pi/autostart $AUTOSTART_PATH/autostart
-  echo "@$AUTOSTART_PATH/kiosk.sh" >> $AUTOSTART_PATH/autostart
+  echo "$AUTOSTART_PATH/kiosk.sh" >> $AUTOSTART_PATH/autostart
 else
   if grep -Fxq "@$AUTOSTART_PATH/kiosk.sh" $AUTOSTART_PATH/autostart; then
     echo "[SKIP] kiosk already setup"
   else
-    echo "@$AUTOSTART_PATH/kiosk.sh" >> $AUTOSTART_PATH/autostart
+    echo "$AUTOSTART_PATH/kiosk.sh" >> $AUTOSTART_PATH/autostart
   fi
 fi
 
