@@ -18,6 +18,8 @@ xset s noblank
 
 while true;
 do
+  sleep 5
+
   # Remove the mouse cursor after 10 seconds of idleness
   unclutter -idle 10 -grab &
 
