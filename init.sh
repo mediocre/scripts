@@ -53,6 +53,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension DigitalBrainstem.javascript-ejs-support
 code --install-extension GitHub.copilot
 code --install-extension GitHub.copilot-chat
+code --install-extension mechatroner.rainbow-csv
 code --install-extension ms-vsliveshare.vsliveshare
 
 # Mac App Store CLI
