@@ -55,6 +55,7 @@ code --install-extension GitHub.copilot
 code --install-extension GitHub.copilot-chat
 code --install-extension mechatroner.rainbow-csv
 code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension redhat.vscode-yaml
 
 # Mac App Store CLI
 brew install mas
